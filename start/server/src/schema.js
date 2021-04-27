@@ -34,9 +34,10 @@ type Rocket {
   
   type Query {
     launches(
-        pageSize: Int
-        after: String
-    ): LaunchConnection!  launch(id: ID!): Launch
+      pageSize: Int   
+      after: String  
+    ): LaunchConnection!  
+    launch(id: ID!): Launch
     me: User
   }
 
@@ -60,7 +61,7 @@ type Rocket {
   
   
  `
-    ;
+  ;
 
 module.exports = typeDefs;
 
